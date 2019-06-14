@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城官网</title>
+    <link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/font/iconfont.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- 轮播图 -->
+        <div class="index-banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/00d01e77-400f-49d8-9aab-accf4c0695d5.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/0a62cb46-44e6-48d5-be96-560daada2e4e.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/1ec1fe3c-2543-4065-b73d-1e7c1bb7ceb5.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/3c7e7ef0-c75a-4e2a-bbb4-23c4522244e4.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/5ba809fa-f24e-4b8d-8723-c6d63dd1e5ba.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/6c30441b-d496-4698-94e2-aab4d91ec24a.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/741c1733-a8f4-47f6-83cd-56c9e9bad6cb.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/9053213c-6ba1-4205-9379-6539a8b5dfbb.jpg"></a></div>
+                <div class="swiper-slide"><a href="javascript:;"><img src="images/96c1f9bd-d7be-496d-938a-3f80a634a658.jpg"></a></div>
+            </div>
+            <!--分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 导航按钮 -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+
+        <!-- <div class="index-adv">
+            <div class="section-box row">
+                <div class="section-adv col-xs-6 col-md-3">
+                    <a href="javascript:;" class="thumbnail">
+                        <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                        <em>魅族 16Xs</em>
+                        <p>立即购买</p>
+                    </a>
+                </div>
+                <div class="section-adv col-xs-6 col-md-3">
+                    <a href="javascript:;" class="thumbnail">
+                        <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                        <em>魅族 16Xs</em>
+                        <p>立即购买</p>
+                    </a>
+                </div>
+                <div class="section-adv col-xs-6 col-md-3">
+                    <a href="javascript:;" class="thumbnail">
+                        <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                        <em>魅族 16Xs</em>
+                        <p>立即购买</p>
+                    </a>
+                </div>
+                <div class="section-adv col-xs-6 col-md-3">
+                    <a href="javascript:;" class="thumbnail">
+                        <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                        <em>魅族 16Xs</em>
+                        <p>立即购买</p>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- list模板 -->
+        <div class="index-adv" id="list-container"></div>
+        <script type="text/html" id="list-template">
+            <div class="section-box row">
+                {{each list item}}
+                <div class="section-adv col-xs-6 col-md-3">
+                    <a href="/html/detail.html?id={{item.id}}" class="thumbnail">
+                        <img src="{{item.image}}">
+                        <em id="title">{{item.title}}</em>
+                        <p id="activity">{{item.activity}}</p>
+                    </a>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+
+        <div class="index-phone" id="index-phone">
+            <div class="section-box">
+                <div class="section-title">
+                    <h3>魅族手机</h3>
+                </div>
+                <div class="section-adv">
+                    <a href="javascript:;" class="kk"></a>
+                </div>
+
+                <div class="section-box-row">
+                    <div class="section-wrap">
+                        <div class="section-item1">
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="section-item2">
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="section-adv">
+                                <a href="javascript:;">
+                                    <img src="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png" alt="images/Cgbj0VzaXQqAMN2pAAa47vx50YU413.png">
+                                    <div>
+                                        <p class="list-name">魅族 16Xs</p>
+                                        <p class="list-desc">4800W AI三摄 | 屏幕下指纹</p>
+                                        <p class="list-price">￥<span>8848</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.js" data-main="js/index"></script>
+</body>
+
+</html>

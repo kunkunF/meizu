@@ -1,0 +1,126 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+
+    a {
+        color: #000000;
+        &:hover{
+            color: #c00;
+        }
+    }
+
+    .header-wrap {
+        max-width: 1240px;
+        height: auto;
+        margin: 0 auto;
+
+        .header-logo {
+            float: left;
+            padding: 25px 0;
+
+            a {
+                font-size: 25px;
+            }
+        }
+
+        .header-cart {
+            float: right;
+            width: 29px;
+            height: 29px;
+            margin: 23px 0 0 8px;
+            position: relative;
+
+            span {
+                font-size: 25px !important;
+
+                em {
+                    position: absolute;
+                    top: -2px;
+                    right: -3px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background: #c00;
+                    color: #fff;
+                    line-height: 15px;
+                    text-align: center;
+                    padding: 0 4px;
+                    display: inline-block;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .header-user {
+            float: right;
+            margin: 23px 0 0 20px;
+            position: relative;
+
+            .icon-home {
+                color: #000000;
+                font-size: 25px;
+
+            }
+
+            ul {
+                display: none;
+                position: absolute;
+                width: 98px;
+                margin-left: -48px;
+                left: 50%;
+                right: 0;
+                background-color: #fff;
+                border-radius: 2px;
+                text-align: center;
+
+                li {
+                    margin: 15px auto;
+
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+
+            &:hover ul {
+                display: block;
+            }
+        }
+
+
+        .header-link {
+            float: right;
+
+            a {
+                font-size: 14px;
+                padding: 31px 20px 30px;
+                display: block;
+            }
+        }
+
+        .header-search {
+            width: 170px;
+            margin-top: 28px;
+            float: right;
+            border-radius: 20px;
+            border: 1px solid #999;
+            box-sizing: border-box;
+            background: #fff;
+
+            input {
+                height: 25px;
+                border: none;
+            }
+
+            button {
+                height: 25px;
+                width: 35px;
+                border: none;
+                background: #fff;
+                line-height: 15px;
+                margin-left: -5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+body {
+    background: #f4f4f4;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    height: 80px;
+    background-color: #fff;
+}
+
+.banner {
+
+    .xx {
+        height: 450px;
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+        background-image: url(../images/Cgbj0Fz4yQmAccHRAA1Hjg5HOGA600.jpg);
+        background-color: #c08585;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.wrap {
+    padding-bottom: 60px;
+
+    .content {
+        width: 1240px;
+        margin: 0 auto;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 87px;
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 1;
+
+            span {
+                color: #515151;
+            }
+
+            div {
+
+                a {
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: #343434;
+                    line-height: 20px;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .list-container {
+            .item-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                &::before {
+                    display: table;
+                    content: " ";
+                }
+
+                .item-list {
+                    width: 33%;
+                    height: 556px;
+                    background: #fff;
+                    transition: all .3s ease;
+                    margin: 0 0 15px 0;
+                    position: relative;
+
+                    .item-link {
+                        display: block;
+                        padding-top: 40px;
+                        padding-bottom: 28px;
+                        max-height: 556px;
+                        text-align: center;
+
+                        img {
+                            display: block;
+                            width: 80%;
+                            margin: 0 auto;
+                            min-height: 320px;
+                            max-width: 320px;
+                        }
+
+                        .item-slide-wrap {
+                            display: inline-block;
+                            min-height: 20px;
+                            margin: 10px 0;
+                            opacity: 0;
+
+                            .item-slide {
+                                float: left;
+                                width: 26px;
+                                height: 26px;
+                                border-radius: 50%;
+                                background: red;
+                            }
+                        }
+
+                        .item-title {
+                            font-size: 23px;
+                            color: #333;
+                            padding: 0 12px;
+                            text-align: center;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+
+                        .item-desc {
+                            display: inline-block;
+                            margin: 5px auto;
+                            color: #666;
+                            text-align: center;
+                            min-height: 24px;
+                            font-size: 16px;
+                            font-weight: 300;
+                            max-width: 270px;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+
+                        .item-price {
+                            color: #c00;
+                            padding: 0 12px;
+                            text-align: center;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+
+                            span {
+                                margin-right: 2px;
+                                font-size: 14px;
+                            }
+
+                            b {
+                                font-size: 24px;
+                            }
+                        }
+
+                        em {
+                            position: absolute;
+                            top: 18px;
+                            left: 18px;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            color: #fff;
+                            font-size: 16px;
+                            border-radius: 50%;
+                            background-color: #ff3149;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

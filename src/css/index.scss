@@ -1,0 +1,224 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+.header {
+    a {
+        color: #fff;
+
+        &:hover {
+            color: #c00;
+        }
+    }
+
+    .header-user {
+        color: #fff;
+
+        .icon-home {
+            color: #fff !important;
+        }
+    }
+}
+
+main {
+    min-width: 100%;
+    z-index: 1000;
+
+    .index-banner {
+        height: 670px;
+        margin: auto;
+
+        .swiper-slide {
+            width: 1519.2px;
+            height: 670px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .index-adv {
+        width: 100%;
+
+        .section-box {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding-bottom: 45px;
+
+
+            .section-adv {
+                width: 25%;
+                float: left;
+                padding-top: 45px;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    img {
+                        width: 130px;
+                        height: 130px;
+                    }
+
+                    em {
+                        display: block;
+                        color: #333;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .index-phone {
+        width: 100%;
+        height: auto;
+        background-color: #cccccc;
+
+        .section-box {
+            margin-bottom: 50px;
+
+            .section-title {
+                height: 88px;
+
+                h3 {
+                    font-size: 22px;
+                    text-align: center;
+                    line-height: 88px;
+                }
+            }
+
+            .section-adv {
+                height: 450px;
+                background-color: #fff;
+                border-bottom: 1px solid #eee;
+                overflow: hidden;
+
+                .kk {
+                    width: 100%;
+                    height: 100%;
+                    transition: opacity .2s linear;
+                    background: url(../images/f863a59d-ed57-486a-bfbb-cb57486381db.jpg) center no-repeat;
+                    display: block;
+                }
+            }
+
+            .section-box-row {
+
+                .section-wrap {
+                    width: 1240px;
+                    margin: auto;
+                    margin-top: 10px;
+
+                    .section-item1 {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+
+                        .section-adv {
+                            width: 49.5%;
+                            height: 610px;
+                            position: relative;
+                            background: #fff;
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    width: 450px;
+                                    height: 450px;
+                                    position: absolute;
+                                    top: 20%;
+                                    left: 13%;
+                                }
+
+                                div {
+                                    width: 100%;
+                                    text-align: center;
+                                    padding-top: 20px;
+
+                                    .list-name {
+                                        font-size: 22px;
+                                    }
+
+                                    .list-desc {
+                                        font-size: 20px;
+
+                                    }
+
+                                    .list-price {
+                                        font-size: 16px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+
+                    .section-item2 {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        .section-adv {
+                            width: 24.5%;
+                            height: 370px;
+                            position: relative;
+                            background: #fff;
+                            margin-bottom: 10px;
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    width: 230px;
+                                    height: 230px;
+                                    position: absolute;
+                                    top: 10%;
+                                    left: 13%;
+                                }
+
+                                div {
+                                    width: 100%;
+                                    margin-top: 92%;
+                                    text-align: center;
+
+                                    .list-name {
+                                        font-size: 18px;
+                                    }
+
+                                    .list-desc {
+                                        font-size: 16px;
+
+                                    }
+
+                                    .list-price {
+                                        font-size: 14px;
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

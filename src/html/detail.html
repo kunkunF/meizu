@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城-详情</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/font/iconfont.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="header-top">
+            <div>
+                <span>魅族16Xs</span>
+                <p>
+                    <a href="javascript:;">概述</a>
+                    <a href="javascript:;">概述</a>
+                </p>
+            </div>
+        </div>
+        <!-- 详情页模板 -->
+        <div class="detail-container" id="detail-container"></div>
+        <script type="text/html" id="detail-template">
+            <div class="left">
+                <div class="zoom-wrap">
+                    <img class="zoom-img" src="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}" alt="">
+                </div>
+                <div class="zoom-box">
+                    <div class="back"><a href="javascript:;"></a></div>
+                    <div class="nav-img" id="product-img">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" data-image="{{data.imgs[0]}}" data-zoom-image="{{data.imgs[0]}}">
+                                    <img class="s" src="{{data.imgs[0]}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-image="{{data.imgs[1]}}" data-zoom-image="{{data.imgs[1]}}">
+                                    <img class="s" src="{{data.imgs[1]}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-image="{{data.imgs[2]}}" data-zoom-image="{{data.imgs[2]}}">
+                                    <img class="s" src="{{data.imgs[2]}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-image="{{data.imgs[3]}}" data-zoom-image="{{data.imgs[3]}}">
+                                    <img class="s" src="{{data.imgs[3]}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" data-image="{{data.imgs[4]}}" data-zoom-image="{{data.imgs[4]}}">
+                                    <img class="s" src="{{data.imgs[4]}}" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="forward"><a href="javascript:;"></a></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">{{data.title}}</div>
+                <div class="subtitle">{{data.subtitle}}</div>
+                <div class="price">
+                    <span>￥{{data.price}}</span>
+                </div>
+                <dl class="sibing">
+                    <dt>型号</dt>
+                    <dd>
+                        <a>魅族16Xs</a>
+                        <a>魅族16th</a>
+                        <a>魅族16th Plus</a>
+                        <a>魅族16s</a>
+                        <a>魅族16X</a>
+                        <a>魅族Note9</a>
+                    </dd>
+                </dl>
+                <dl class="set list">
+                    <dt>颜色分类</dt>
+                    <dd>
+                        <a>碳纤黑</a>
+                        <a>凝光白</a>
+                        <a>幻影蓝</a>
+                    </dd>
+                </dl>
+                <dl class="set list">
+                    <dt>内存容量</dt>
+                    <dd>
+                        <a>6+128G</a>
+                        <a>8+128G</a>
+                        <a>666+8848G</a>
+                    </dd>
+                </dl>
+                <div class="cart-buy">
+                    <p>数量</p>
+                    <div class="mod-control">
+                        <a href="javascript:;" id="cut-num">-</a>
+                        <input type="text" value="1" min="1" id="num-input">
+                        <a href="javascript:;" id="add-num">+</a>
+                    </div>
+                </div>
+                <div class="buy">
+                    <a href="javascript:;" class="de-buy">立即购买</a>
+                    <a href="javascript:;" class="de-cart" id="add-cart">加入购物车</a>
+                </div>
+            </div>
+        </script>
+    </main>
+    <footer></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/detail"></script>
+</body>
+
+</html>
